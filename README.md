@@ -274,7 +274,21 @@ ___
 
 `oc exec -it $PODNAME -- mysql -u root -p vaxdb -e 'USE vaxdb; SHOW TABLES;'`   
 
-___ 
+
+When prompted for a password, enter 'admin'.
+___  
+
+You will see this result:
+
+
+```
+oc exec -it $PODNAME -- mysql -u root -p vaxdb -e 'USE vaxdb; SHOW TABLES;'                                                                                  Enter password:
++-----------------------+
+| Tables_in_vaxdb       |
++-----------------------+
+| vaccination_summaries |
++-----------------------+
+```
 
 
 ## Congratulations
